@@ -13,7 +13,7 @@ function insert(root, string) {
     const pos = string[i].charCodeAt(0) - 'a'.charCodeAt(0);
     console.log(string[i])
     if (!curr.children[pos]) {
-      const node =new Trie();
+      let node =new Trie();
       node.children[pos] = string[i];
     }
     curr=curr[pos];
